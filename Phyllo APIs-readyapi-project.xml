@@ -161,6 +161,9 @@
     <con:service type="REST" name="Connect_US">
       <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.dev.getphyllo.com</con:endpoint>
     </con:service>
+    <con:service type="REST" name="Engagement_DK">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.dev.getphyllo.com</con:endpoint>
+    </con:service>
     <con:property>
       <con:name>BASE_URL</con:name>
       <con:value>https://api.dev.getphyllo.com</con:value>
@@ -6757,6 +6760,776 @@
       </con:environmentSpec>
     </con:resource>
   </con:interface>
+  <con:interface xsi:type="con:RestService" id="6e73bc02-2610-4645-a4ce-d1f0ec281d40" name="Engagement_DK" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings>
+      <con:setting id="49ba2ca8-e826-434a-a428-ab4d6329c5e5fileName">Engagement_DK</con:setting>
+    </con:settings>
+    <con:definitionCache type="TEXT" rootPart="Engagement.json">
+      <con:part>
+        <con:url>Engagement.json</con:url>
+        <con:content>{"openapi":"3.0.1","info":{"title":"Engagement","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/v1/social/content-groups/{CONTENT_GROUP_ID}":{"get":{"parameters":[{"name":"CONTENT_GROUP_ID","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups/refresh":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/comments":{"get":{"parameters":[{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/income/transactions/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents":{"get":{"parameters":[{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/{CONTENT_ID}":{"get":{"parameters":[{"name":"CONTENT_ID","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/refresh":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-group":{"get":{"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups":{"description":"","get":{"description":"","parameters":[{"name":"account_id","in":"query","required":true,"schema":{"type":"string"}},{"name":"from date","in":"query","required":true,"schema":{"type":"string"}},{"name":"to date","in":"query","required":true,"schema":{"type":"string"}},{"name":"offset","in":"query","required":false,"schema":{"type":"string"}},{"name":"limit","in":"query","required":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}},"post":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+        <con:type>https://swagger.io/openapiv3/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints/>
+    <con:environmentSpec>
+      <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="CONTENT_GROUP_ID" path="/v1/social/content-groups/{CONTENT_GROUP_ID}" id="97c63c00-46c7-4cf2-b9bc-787072c977b7">
+      <con:settings>
+        <con:setting id="c3ba8c0d-4b2f-40b3-ae06-b29b632dbef5fileName">CONTENT_GROUP_ID</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="CONTENT_GROUP_ID" id="cdcbd69f-e5b0-47cf-b54b-4d22b23c04bb" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>CONTENT_GROUP_ID</con:name>
+            <con:value>${#Project#CONTENT_GROUP_ID}</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>${#Project#CONTENT_GROUP_ID}</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Get Content-Groups By Id" id="2fafc708-fb4c-41aa-8710-e39f593c6572" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="CONTENT_GROUP_ID" value="${#Project#CONTENT_GROUP_ID}"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>CONTENT_GROUP_ID</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="CONTENT_ID" path="/v1/social/contents/{CONTENT_ID}" id="f420abcd-1cd4-4b67-bb62-27926613ca64">
+      <con:settings>
+        <con:setting id="04b0a5d8-9b62-474d-af0b-2165cf374abcfileName">CONTENT_ID</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="CONTENT_ID" id="ba68b00a-ef16-4c19-be63-e1ed292344bd" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>CONTENT_ID</con:name>
+            <con:value>${#Project#CONTENT_ID}</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>${#Project#CONTENT_ID}</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Get Contents By Id" id="d6dee837-46a2-4af3-bdcf-911f37377a7f" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="CONTENT_ID" value="${#Project#CONTENT_ID}"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>CONTENT_ID</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Comments" path="/v1/social/comments" id="9536ad3b-b2be-441b-997c-56889e30a795">
+      <con:settings>
+        <con:setting id="2a93a97d-4f95-4120-bb78-39026a2cdb95fileName">Comments</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Comments" id="a8a9324e-fee6-42cb-8dab-9d976eab25f5" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>account_id</con:name>
+            <con:value>${#Project#ACCOUNT_ID}</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>${#Project#ACCOUNT_ID}</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>limit</con:name>
+            <con:value>100</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>100</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Get Comments" id="397c8f2b-a5e4-4058-a964-02b41d38c43c" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+            <con:entry key="limit" value="100"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>account_id</con:entry>
+            <con:entry>limit</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Content-groups" path="/v1/social/content-groups" id="2fc4d84b-a1d9-4884-ad2d-4282a07f34f3">
+      <con:settings>
+        <con:setting id="d4803ad1-a372-40ce-b714-1df42ab75faafileName">Content-groups</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Content-groups" id="67076822-86da-4cfb-8148-190c073131d9" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>account_id</con:name>
+            <con:value>${#Project#ACCOUNT_ID}</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>${#Project#ACCOUNT_ID}</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>from_date</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>to_date</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>offset</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>limit</con:name>
+            <con:style>QUERY</con:style>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Get All Content-Groups" id="c98ec0dc-3e18-4311-a012-cca53be06714" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+            <con:entry key="offset" value=""/>
+            <con:entry key="to_date" value=""/>
+            <con:entry key="from_date" value=""/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>account_id</con:entry>
+            <con:entry>from_date</con:entry>
+            <con:entry>to_date</con:entry>
+            <con:entry>offset</con:entry>
+            <con:entry>limit</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:method name="Refresh" id="122d6a1b-ab93-4c90-899b-fec8ab085a4a" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="32186dca-f9f9-4b61-8887-7e3192cc4677" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Contents" path="/v1/social/contents" id="06f7a718-6ec6-4b94-9004-af0fe0a93ebb">
+      <con:settings>
+        <con:setting id="d947f884-96c7-416a-b86f-3879e4a3ea79fileName">Contents</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Contents" id="1377d61d-36eb-4fe5-bfde-349d16ccc6f3" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>limit</con:name>
+            <con:value>100</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>100</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>account_id</con:name>
+            <con:value>${#Project#ACCOUNT_ID}</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>${#Project#ACCOUNT_ID}</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Get All Contents" id="9d019a0e-0015-46a0-8ee3-58c6cecf38ac" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+            <con:entry key="limit" value="100"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>limit</con:entry>
+            <con:entry>account_id</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Refresh 2" path="/v1/social/content-groups/refresh" id="89cfdcaa-6f12-461d-8f4c-be69b420f35f">
+      <con:settings>
+        <con:setting id="ca857d72-0696-4a11-bbdb-738782c9cad2fileName">Refresh-2</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Refresh" id="49d6a59f-6b0a-4a1e-82fe-6c1523046799" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>Authorization</con:name>
+            <con:value>Basic NzI5YWRmZDEtMzYzOS00M2Y0LTg2OGQtOGM2NTdmYmE4MTUzOjc2MTRjOTk1LWQ3MzEtNDQwNS04NjQ0LWQwMzU0NmM4YTQ3Nw==</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Refresh content-groups" id="e9c7416b-a767-4077-b4b2-a1aece56634f" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="Authorization" value="Basic NzI5YWRmZDEtMzYzOS00M2Y0LTg2OGQtOGM2NTdmYmE4MTUzOjc2MTRjOTk1LWQ3MzEtNDQwNS04NjQ0LWQwMzU0NmM4YTQ3Nw=="/>
+            <con:entry key="Content-Type" value="application/json"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>Authorization</con:entry>
+            <con:entry>Content-Type</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Refresh" path="/v1/social/contents/refresh" id="fbc8d40e-ba04-4c51-aad0-1cd95d6c1f9b">
+      <con:settings>
+        <con:setting id="4fbd7e0a-c761-4fc1-ba1b-a7413ea48d9afileName">Refresh</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Refresh" id="73a567c0-0614-4263-9cac-5525abf4cafc" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>Authorization</con:name>
+            <con:value>Basic NTNjZmVjZmUtNmQxMi00MDM1LTg2NGQtY2Q4YzQwYjk1NTFlOmI1YmY3YTNmLWVlNjgtNGJkYi1iNWVlLTNmNmE1YzFiNzkwNA==</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Refresh contents" id="f252a401-4d22-47fd-8cb5-39f05584cb46" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="Authorization" value="Basic NTNjZmVjZmUtNmQxMi00MDM1LTg2NGQtY2Q4YzQwYjk1NTFlOmI1YmY3YTNmLWVlNjgtNGJkYi1iNWVlLTNmNmE1YzFiNzkwNA=="/>
+            <con:entry key="Content-Type" value="application/json"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>Authorization</con:entry>
+            <con:entry>Content-Type</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Search 2" path="/v1/social/contents/search" id="55d1d4ca-4c24-4903-ba27-4347b925f2b8">
+      <con:settings>
+        <con:setting id="7eb5f3ff-8acf-43c7-adbc-1e3ea6bf4b7ffileName">Search-2</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Search" id="31f14f86-fe0e-4567-8572-20f5c0fb1f69" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>Authorization</con:name>
+            <con:value>Basic M2UzZTYzNjEtZGRhNS00ZDA3LWIxMmUtOTBmNjM1NTFiN2ZmOmI1YTc3ZTM4LTE2ZWEtNGQ3Yy1iMTIxLWI4NDg1OTljYWYyMg==</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Post search for contents" id="f58069eb-3b13-4387-862f-0312b8c7a2f2" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="Authorization" value="Basic M2UzZTYzNjEtZGRhNS00ZDA3LWIxMmUtOTBmNjM1NTFiN2ZmOmI1YTc3ZTM4LTE2ZWEtNGQ3Yy1iMTIxLWI4NDg1OTljYWYyMg=="/>
+            <con:entry key="Content-Type" value="application/json"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>Authorization</con:entry>
+            <con:entry>Content-Type</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Search 3" path="/v1/social/content-groups/search" id="426cbc71-b2a2-4115-bb3c-6c8db62afb7b">
+      <con:settings>
+        <con:setting id="942ae32d-c47c-466b-aca1-d5801e6ba0d8fileName">Search-3</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Search" id="5de381e2-8c11-4234-916e-948b8d9d001c" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>Authorization</con:name>
+            <con:value>Basic MzExNWYzMjEtN2ZiYS00MDU0LTg1YWQtOGNjZGRhZjQ2YTdiOjE4NjZkMDc0LTZjYWQtNDgwNi04NzU3LTNhODk5ODVjOTMzMg==</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Post search for content-groups" id="2b76dabb-a59d-40a8-b350-82b8219f5dc4" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="Authorization" value="Basic MzExNWYzMjEtN2ZiYS00MDU0LTg1YWQtOGNjZGRhZjQ2YTdiOjE4NjZkMDc0LTZjYWQtNDgwNi04NzU3LTNhODk5ODVjOTMzMg=="/>
+            <con:entry key="Content-Type" value="application/json"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>Authorization</con:entry>
+            <con:entry>Content-Type</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Search" path="/v1/social/income/transactions/search" id="090eef61-bcda-4c19-9392-c2cd7b447b5f">
+      <con:settings>
+        <con:setting id="39e088d4-d045-4d6f-873b-1a436dbc82c7fileName">Search</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Search" id="2a5e9789-3df4-4d50-90c3-98603cb0ba70" method="POST">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>Authorization</con:name>
+            <con:value>Basic NjQ4MTE0YmMtNjQzMC00NzI5LWJjZGMtNjc0ZTcxOTJmMTIyOmJiNGEyODcxLTFmMGEtNDgwNS05ZDZjLTg1NzU2OWY4MTAxNA==</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default/>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Post search for income transaction" id="671d0475-85be-4bca-92e2-0750a73804ee" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="Authorization" value="Basic NjQ4MTE0YmMtNjQzMC00NzI5LWJjZGMtNjc0ZTcxOTJmMTIyOmJiNGEyODcxLTFmMGEtNDgwNS05ZDZjLTg1NzU2OWY4MTAxNA=="/>
+            <con:entry key="Content-Type" value="application/json"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>Authorization</con:entry>
+            <con:entry>Content-Type</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:resource>
+    <con:resource name="Group" path="v1/social/content-group" id="3b8b3c6a-5f73-4e79-b06d-74557654fcde">
+      <con:settings>
+        <con:setting id="8a0432b1-c038-4fc9-ba23-a1403bc31e6dfileName">Group</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Group" id="943ad4ff-2045-4873-a08b-337a2ef4ad6e" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Get All Content-Group" id="c0f5274b-4bda-468c-82cd-68b36fc9c611" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+            <con:entry key="offset" value=""/>
+            <con:entry key="limit" value="10"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>account_id</con:entry>
+            <con:entry>from date</con:entry>
+            <con:entry>to date</con:entry>
+            <con:entry>limit</con:entry>
+            <con:entry>offset</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+          </con:environmentSpec>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
   <con:testSuite id="8b57a1a6-5dd2-44ed-be4f-0225411606d8" name="Tenant And User Details">
     <con:settings>
       <con:setting id="8b57a1a6-5dd2-44ed-be4f-0225411606d8fileName">Tenant-And-User-Details</con:setting>
@@ -11833,6 +12606,2132 @@ driver.quit()</script>
             </con:parameters>
             <con:parameterOrder>
               <con:entry>ACCOUNT_ID</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+  </con:testSuite>
+  <con:testSuite id="041e1b4e-30f6-4184-ac02-5fe0c6ab11b2" name="EngagementDK">
+    <con:settings>
+      <con:setting id="e9ebbaed-4908-4b90-9911-0a2ddf48136efileName">Engagement2</con:setting>
+    </con:settings>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:properties/>
+    <con:reportParameters/>
+    <con:testCase id="e0b90681-a3e9-4a5c-810f-17f6a6d611c0" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Contents Group Positive Test cases" searchProperties="true" timeout="0">
+      <con:settings>
+        <con:setting id="ee254cfc-ce39-4fab-a78b-2519586c6960fileName">Get-Contents-Group-Positive-Test-cases</con:setting>
+      </con:settings>
+      <con:testStep type="restrequest" name="TC51_Validate the api by passing valid client id and client secret. 200" id="36c02a71-3495-42f9-9e78-69314bbf4bd6">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC51_Validate the api by passing valid client id and client secret. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="8fced74e-e508-4c0e-a1a3-a184024513c8" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value="1"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC54_Validate the api by passing tenant which don't have engagement product subscription. 200" id="acc4d057-e598-45d7-befd-d5de7e29c6af">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC54_Validate the api by passing tenant which don't have engagement product subscription. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="f068fd7f-72a0-4f8f-891f-3a157e8200f1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value="1"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC55_Validate the api by passing disconnected account id. 200" id="edef0d13-d2fd-4c2f-a80c-ba328185d3db">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC55_Validate the api by passing disconnected account id. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="590de703-66c3-4a63-ac0c-6c1f1014e3b6" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC58_Validate the api without passing the limit in query parameter.200" id="15727733-cc70-4620-ab66-f9bd2e76494a">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC58_Validate the api without passing the limit in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d986f84d-ac72-4c3a-98fb-ed01d8f6334b" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="T60_Validate the api by passing minimum offset in query parameter.200" id="74bcf0b6-6b16-4154-8199-c5f84d6a87e3">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="T60_Validate the api by passing minimum offset in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="344643a3-eb4e-42ea-82dc-248d15a93d6e" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value="1"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC61_Validate the api without passing the offset in query parameter.200" id="6dbc9413-7765-4260-b913-533db452fa5c">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC61_Validate the api without passing the offset in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="6b8f5830-b666-4730-8fc0-0306bf11ef36" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC62_Validate the api by passing session expired account id.200" id="b557abb3-8c2f-480c-a220-09c11b5dbac7">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC62_Validate the api by passing session expired account id.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="e2fcfbf2-9c81-4756-8bcd-dd8992dc5439" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC63_Validate the api response by verifying that contents should be displayed on recency.200" id="64d81b32-300b-42b4-b4ea-315535e2cab3">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC63_Validate the api response by verifying that contents should be displayed on recency.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="19add956-139a-473d-bdcd-8530e80af531" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC64_Validate the api response by verifying that engagement of a user is displying properly or not200" id="2dedc884-4901-430b-9920-ed879578ba30">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC64_Validate the api response by verifying that engagement of a user is displying properly or not200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="294a6071-edab-4619-9e1a-f753d91fee3b" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC65_Validate the api response,by verifying each and every attributes is displaying against the requirement. 200" id="f510c798-28cc-4f08-8bfa-89de53f2f05d">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC65_Validate the api response,by verifying each and every attributes is displaying against the requirement. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="68865545-3270-4504-9627-35b312bbddd1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC66_Validate the api response by verifying that response should displyed on reverse chronological order after each crawler run. 200" id="3f1ab94b-dbce-4f82-9547-8fabd99f4d4a" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC66_Validate the api response by verifying that response should displyed on reverse chronological order after each crawler run. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d3da38f0-0450-4e90-92da-11ab556b9ed3" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC67_Validate the api response when engagement product status is SYNCED in accounts api.200" id="f9c9e713-57a1-4a5b-beed-3ac2f8536cf4" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC67_Validate the api response when engagement product status is SYNCED in accounts api.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c5ec087c-1254-40fe-bb90-dde48b4e799c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC68_Validate the api response when engagement product status is PARTIAL_SYNCED in accounts api. 200" id="070e6761-f8f8-4638-8e4b-ca9a7e504d60" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC68_Validate the api response when engagement product status is PARTIAL_SYNCED in accounts api. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="a7612a2a-0e10-4f22-be41-337186963a6c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC70_Validate the api by making the account as private and try to get the content information.200" id="3ba82c5c-0a61-4b28-b5ff-dd265031c20d" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC70_Validate the api by making the account as private and try to get the content information.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="59412c08-d076-4399-8d99-5d1a8f7d79ff" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC71_Validate the api by making any video as private and check whether its fetching or not.200" id="96ab9652-d3dd-4578-9132-6209cf6a0e03" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC71_Validate the api by making any video as private and check whether its fetching or not.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="83f9ec37-bd85-4d21-86aa-806171b72df2" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC72_Validate the api by without granting the content fetching permission while authorising. 200" id="baae6d16-3370-4b68-87b3-39c400e53c5e" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC72_Validate the api by without granting the content fetching permission while authorising. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="a13568d0-37d5-4352-9c08-e4a6d5cc1a8c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>No Authorization</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC74_Validate the api by verifying that crawler should refresh only last 90 days contents at max.200" id="28c02f6c-7e8b-4435-af2d-e9e65f46ca8a" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC74_Validate the api by verifying that crawler should refresh only last 90 days contents at max.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="97e4c674-3312-46eb-b4c5-5c6a0a45ce38" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC75_Validate the api by verifying that if the account has no collection/albums in last 90 days.200" id="5387228d-6e89-46dc-82c4-ad5a1b4c4243">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC75_Validate the api by verifying that if the account has no collection/albums in last 90 days.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="948799a2-6c73-405f-b489-19117673fc2d" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC76_Validate the api by verifying that refresh crawler will fetch last 90 days collection/album or not.200" id="d95fdb2f-7787-46d1-8da7-84ffcd910f1a" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC76_Validate the api by verifying that refresh crawler will fetch last 90 days collection/album or not.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="8da261c2-10c3-46b0-83ff-104953f95c4c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC77_Validate the api by verifying that when crawler refresh the data after 24 hour.200" id="8ff1830b-edb1-4ebe-a278-ba367d9582bc" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC77_Validate the api by verifying that when crawler refresh the data after 24 hour.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0e74b1d7-8a48-4803-b0ac-a59de99259c3" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC78_Validate the api by verifying that when crawler fails to refresh the data in 1st attempt.200" id="162b768d-3a2e-47d2-b092-e52a3df01d59" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC78_Validate the api by verifying that when crawler fails to refresh the data in 1st attempt.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="cbb37f3c-8ac3-48bb-aacf-9c70284cfbd8" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC79_Validate the api by verifying that when crawler fails to refresh the data in repetitive attempts.200" id="8698afff-b090-49b0-92a2-d3ec9ea18bb4" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC79_Validate the api by verifying that when crawler fails to refresh the data in repetitive attempts.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="53b570cd-d906-4d6f-9441-dce25f391b74" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC80_Validate the api by passing account id,product name and from date in account refresh api for historical search.200" id="33d3a9cb-bb8f-407f-b1e4-c37f722c7b4f">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC80_Validate the api by passing account id,product name and from date in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="83deef38-370d-44e2-a367-b687ac2a7938" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value="2023-02-07"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC81_Validate the api by passing account id,product name and from date which is older than 365 days in account refresh api for historical search.200" id="c1f6d507-558d-4f8a-8f52-413f5149e487">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC81_Validate the api by passing account id,product name and from date which is older than 365 days in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="4891c41b-6ea5-4bf4-a51b-30aa74a32132" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="to_date" value="2022-12-12"/>
+              <con:entry key="from_date" value="2021-12-12"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC82_Validate the api without passing mandatory params like account id,product name and from date in account refresh api for historical search.200" id="e276544e-5804-426e-846d-296e2a305fc5">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC82_Validate the api without passing mandatory params like account id,product name and from date in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d1c9be49-1252-405a-9284-0e39cbd740ba" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value=""/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value="2023-02-01"/>
+              <con:entry key="from_date" value="2023-01-01"/>
+              <con:entry key="From date" value=""/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC83_Validate the api by passing identity as product name in account refresh api for historical search.200" id="e307106b-6749-4bf0-9a54-b56d54ed9be2">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC83_Validate the api by passing identity as product name in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="f9e0761a-069d-4119-b104-0fab4663b9cf" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="from_date" value="2023-01-01"/>
+              <con:entry key="to_date" value="2023-01-01"/>
+              <con:entry key="From date" value=""/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC73_Validate the api by granting the content fetching permission while authorising.200" id="f02773b3-2aeb-43fb-bac6-adde221fd61e" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC73_Validate the api by granting the content fetching permission while authorising.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d03885e5-d090-4b1d-9c7c-fd1125238b7b" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC84_Validate the api by passing income as product name in account refresh api for historical search.200" id="1187611c-c4db-4b44-8140-0c62bb931997">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC84_Validate the api by passing income as product name in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="98d11cf2-a2c9-4043-b7db-510d4efcacdf" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC69_Validate the api response when engagement product status is NOT_SYNCED in accounts api. 200" id="4d655a46-ae4b-4911-84fa-f390074b8602" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC69_Validate the api response when engagement product status is NOT_SYNCED in accounts api. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="aec4eafe-f076-4c56-97f8-f01c3477eb8d" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC85_Validate the api by passing from date and to date in query parameter for historical search and time period was 365 days at max.200" id="f073413b-771f-4217-864e-35d08b73b6f8" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC85_Validate the api by passing from date and to date in query parameter for historical search and time period was 365 days at max.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="82d47dc7-cb45-42bf-97dc-8a91d1669e1a" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC86_Validate the api by passing from date and to date in query parameter for historical search and time period was more than 365 days.200" id="f1787121-9f9f-49e1-b842-364fc7141404" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC86_Validate the api by passing from date and to date in query parameter for historical search and time period was more than 365 days.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1cbd159b-8a98-42d4-bec0-814d4b5f125b" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC89_Validate the api by passing only from date in the query parameter.200" id="8c380a7e-ab3d-40ed-8545-0bad531521ee">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC89_Validate the api by passing only from date in the query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="94c7fc03-9001-4635-bdb7-88b39b7ed03e" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value="2023-02-08"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC96_Validate the api response by passing same from date and to date in query parameter.200" id="24b541b1-8bc3-4bda-b21a-70951a3f1eeb">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC96_Validate the api response by passing same from date and to date in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c9330dc6-e4b8-4c51-b3c2-e48dbadb160c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value="2023-02-08"/>
+              <con:entry key="from_date" value="2023-02-08"/>
+              <con:entry key="From date" value="2023/06/12"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC97_Validate the api response by passing from_date more than current date.200" id="6d83caa0-83f7-41b7-873d-7becdad2bb67">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC97_Validate the api response by passing from_date more than current date.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="b7f8c45c-2607-4393-acd0-1f2a2b1a6347" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="from_date" value="2023-01-01"/>
+              <con:entry key="to_date" value="2023-02-02"/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC90_Validate the api response by passing from date and to date in query parameter.200" id="5cd49f6d-cb07-4b74-b9d9-8306faafee30">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC90_Validate the api response by passing from date and to date in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ba18900f-37e3-4c2e-854c-786d5ad5b010" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value="2023-02-10"/>
+              <con:entry key="from_date" value="2023-01-02"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="527ff3d9-fbf5-4070-86f9-08b06648a3e4" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Contents Group Negative Test cases" searchProperties="true" timeout="0">
+      <con:settings>
+        <con:setting id="9f3678c9-4102-4f07-8f8a-6fefb90e989bfileName">Get-Contents-Group-Negative-Test-cases</con:setting>
+      </con:settings>
+      <con:testStep type="restrequest" name="TC52_Validate the api by passing invalid client id and client secret. 401" id="aa8a5272-1be8-4350-95c5-2768dc56bdf1">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC52_Validate the api by passing invalid client id and client secret. 401" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="6d95d2ea-a8d9-412c-b09f-70283a6e8ac7" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>401</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC53_Validate the api by passing inactive client id and client secret.403" id="eef1112e-c70b-4ef8-8dc2-eef7d8a31517" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC53_Validate the api by passing inactive client id and client secret.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d0a47736-063a-48f7-9f44-651f89fd1097" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>403</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC55_Validate the api by passing disconnected account id.400" id="dba0707d-1629-43d8-a9af-f3bd0e2332e0" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC55_Validate the api by passing disconnected account id.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC56_Validate the api by passing maximum limit in query parameter. 400" id="0f4bc641-8824-460d-aa11-10d76b236fff">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC56_Validate the api by passing maximum limit in query parameter. 400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="8b6b74be-413a-4440-b6dc-6dc4c10c44a1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC57_Validate the api by passing zero limit in query parameter.400" id="9cced1b2-495f-4c06-9983-66521c549f93">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC57_Validate the api by passing zero limit in query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="857dc416-c82c-41fe-a9b1-1d12c5742fda" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC59_Validate the api by passing maximum offset in query parameter,400" id="c54f9154-3824-4ea0-862f-4016b95910e3">
+        <con:settings/>
+        <con:config service="Engagement_DK" methodName="Content-groups" resourcePath="/v1/social/content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC59_Validate the api by passing maximum offset in query parameter,400" id="ca55fcc5-7058-4e40-a91c-d9c718e2f2b6" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="feb4cfd8-37d6-4b87-8935-a16fb0c12886" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="567654637437434"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC87_Validate the api by changing the end points in the url.403" id="486bd1fb-abf6-42fe-9785-9db8504afde0">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-group" methodName="Group" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC87_Validate the api by changing the end points in the url.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5a507c81-6e6b-47a2-be8c-8978507453c1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>403</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC88_Validate the api by changing the http methods.403" id="5ef0c035-8c52-425b-8084-d5a585dc9bdc">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC88_Validate the api by changing the http methods.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="d6b183d1-c4a6-4373-b059-1497078728a0" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>403</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value=""/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC91_Validate the api response by passing only to date in the query parameter.400" id="6eae9030-fc84-4bea-a482-b39c34b4b8df">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC91_Validate the api response by passing only to date in the query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="5fc2d87b-06db-4271-856b-5f82573a6e41">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value="2023-02-08"/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC92_Validate the api response by passing to_date more than current date.400" id="fe7ac136-d0e1-4f6a-86fd-b4dfa9006b27">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC92_Validate the api response by passing to_date more than current date.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0300702a-b74b-42dd-aa3c-0b11652f5854" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="from_date" value="2023-03-03"/>
+              <con:entry key="to_date" value="2023-03-03"/>
+              <con:entry key="From date" value=""/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC93_Validate the api response by passing to_date lesser than from date. 400" id="780e5aae-8b85-4181-8330-fbd6be05011a">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC93_Validate the api response by passing to_date lesser than from date. 400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="71bb15e0-8d65-451e-aca1-1bd22e03e3e7" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value="2023/06/23"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC94_Validate the api response by passing invalid from date in query parameter.400" id="93fd2ca7-2d3a-4c77-ae2b-d130cc9030f6">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC94_Validate the api response by passing invalid from date in query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="9b87d248-8bb4-49e1-a65f-ee4bf80ff303" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC95_Validate the api response by passing invalid to date in query parameter.400" id="a6226eb5-84d4-45a9-b3e2-3ec60c03db7c">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC95_Validate the api response by passing invalid to date in query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="304842ee-0952-436c-b61e-19aa9b298516" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value="45-10-222"/>
+              <con:entry key="from_date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
