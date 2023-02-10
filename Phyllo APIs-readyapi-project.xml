@@ -184,10 +184,14 @@
     <con:service type="REST" name="Connect_US">
       <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.dev.getphyllo.com</con:endpoint>
     </con:service>
+<<<<<<< HEAD
     <con:service type="REST" name="EngagementSK">
       <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.dev.getphyllo.com</con:endpoint>
     </con:service>
     <con:service type="REST" name="Internal_SK">
+=======
+    <con:service type="REST" name="Engagement_DK">
+>>>>>>> deepak
       <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://api.dev.getphyllo.com</con:endpoint>
     </con:service>
     <con:property>
@@ -6814,14 +6818,24 @@
       </con:environmentSpec>
     </con:resource>
   </con:interface>
+<<<<<<< HEAD
   <con:interface xsi:type="con:RestService" id="bf4f2f15-3f0e-48b6-a31a-ec0eae9b86c3" name="EngagementSK" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings>
       <con:setting id="49ba2ca8-e826-434a-a428-ab4d6329c5e5fileName">Engagement</con:setting>
+=======
+  <con:interface xsi:type="con:RestService" id="6e73bc02-2610-4645-a4ce-d1f0ec281d40" name="Engagement_DK" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings>
+      <con:setting id="49ba2ca8-e826-434a-a428-ab4d6329c5e5fileName">Engagement_DK</con:setting>
+>>>>>>> deepak
     </con:settings>
     <con:definitionCache type="TEXT" rootPart="Engagement.json">
       <con:part>
         <con:url>Engagement.json</con:url>
+<<<<<<< HEAD
         <con:content>{"openapi":"3.0.1","info":{"title":"Engagement","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/v1/social/content-groups/{CONTENT_GROUP_ID}":{"get":{"parameters":[{"name":"CONTENT_GROUP_ID","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups/refresh":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/comments":{"get":{"parameters":[{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/income/transactions/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents":{"get":{"parameters":[{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/{CONTENT_ID}":{"get":{"parameters":[{"name":"CONTENT_ID","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups":{"get":{"parameters":[{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/refresh":{"description":"","post":{"description":"","parameters":[{"name":"Authorization","in":"header","required":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+=======
+        <con:content>{"openapi":"3.0.1","info":{"title":"Engagement","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/v1/social/content-groups/{CONTENT_GROUP_ID}":{"get":{"parameters":[{"name":"CONTENT_GROUP_ID","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups/refresh":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/comments":{"get":{"parameters":[{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/income/transactions/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups/search":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents":{"get":{"parameters":[{"name":"limit","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}},{"name":"account_id","in":"query","required":true,"style":"form","explode":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/{CONTENT_ID}":{"get":{"parameters":[{"name":"CONTENT_ID","in":"path","required":true,"style":"simple","explode":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}}},"/v1/social/contents/refresh":{"post":{"parameters":[{"name":"Authorization","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}},{"name":"Content-Type","in":"header","required":false,"style":"simple","explode":false,"schema":{"type":"string"}}],"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-group":{"get":{"responses":{"default":{"description":"Default response"}}}},"/v1/social/content-groups":{"description":"","get":{"description":"","parameters":[{"name":"account_id","in":"query","required":true,"schema":{"type":"string"}},{"name":"from date","in":"query","required":true,"schema":{"type":"string"}},{"name":"to date","in":"query","required":true,"schema":{"type":"string"}},{"name":"offset","in":"query","required":false,"schema":{"type":"string"}},{"name":"limit","in":"query","required":false,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}},"post":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+>>>>>>> deepak
         <con:type>https://swagger.io/openapiv3/specification</con:type>
       </con:part>
     </con:definitionCache>
@@ -6834,12 +6848,20 @@
         <con:authProfile>Inherit From Parent</con:authProfile>
       </con:entry>
     </con:environmentSpec>
+<<<<<<< HEAD
     <con:resource name="CONTENT_GROUP_ID" path="/v1/social/content-groups/{CONTENT_GROUP_ID}" id="f88b1d8e-9578-40b9-8712-a4e77cff8ec7">
+=======
+    <con:resource name="CONTENT_GROUP_ID" path="/v1/social/content-groups/{CONTENT_GROUP_ID}" id="97c63c00-46c7-4cf2-b9bc-787072c977b7">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="c3ba8c0d-4b2f-40b3-ae06-b29b632dbef5fileName">CONTENT_GROUP_ID</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="CONTENT_GROUP_ID" id="2b202d70-874a-40f1-b434-a204e26e4b4b" method="GET">
+=======
+      <con:method name="CONTENT_GROUP_ID" id="cdcbd69f-e5b0-47cf-b54b-4d22b23c04bb" method="GET">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter required="true">
@@ -6851,7 +6873,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Get Content-Groups By Id" id="19d4ffde-6851-4755-9d5d-932e22e357b4" mediaType="application/json">
+=======
+        <con:request name="Get Content-Groups By Id" id="2fafc708-fb4c-41aa-8710-e39f593c6572" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -6893,12 +6919,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="CONTENT_ID" path="/v1/social/contents/{CONTENT_ID}" id="e2480241-a399-464e-b920-f2cb0c274b07">
+=======
+    <con:resource name="CONTENT_ID" path="/v1/social/contents/{CONTENT_ID}" id="f420abcd-1cd4-4b67-bb62-27926613ca64">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="04b0a5d8-9b62-474d-af0b-2165cf374abcfileName">CONTENT_ID</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="CONTENT_ID" id="69299eac-e623-4346-a393-323909579d1f" method="GET">
+=======
+      <con:method name="CONTENT_ID" id="ba68b00a-ef16-4c19-be63-e1ed292344bd" method="GET">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter required="true">
@@ -6910,7 +6944,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Get Contents By Id" id="05da689e-af76-4cf8-9bec-6b5f966b526c" mediaType="application/json">
+=======
+        <con:request name="Get Contents By Id" id="d6dee837-46a2-4af3-bdcf-911f37377a7f" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -6952,12 +6990,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Comments" path="/v1/social/comments" id="1f0c6d4e-d651-41a7-a313-f33747836d46">
+=======
+    <con:resource name="Comments" path="/v1/social/comments" id="9536ad3b-b2be-441b-997c-56889e30a795">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="2a93a97d-4f95-4120-bb78-39026a2cdb95fileName">Comments</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Comments" id="0e33a671-9969-4d1d-8283-85e9bc529479" method="GET">
+=======
+      <con:method name="Comments" id="a8a9324e-fee6-42cb-8dab-9d976eab25f5" method="GET">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter required="true">
@@ -6977,7 +7023,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Get Comments" id="66ca0e6d-fe42-4d9a-82b6-fc3fde059f5d" mediaType="application/json">
+=======
+        <con:request name="Get Comments" id="397c8f2b-a5e4-4058-a964-02b41d38c43c" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7021,11 +7071,16 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Content-groups" path="/v1/social/content-groups" id="89e39ba3-8075-4832-9689-df6ee7ea873e">
+=======
+    <con:resource name="Content-groups" path="/v1/social/content-groups" id="2fc4d84b-a1d9-4884-ad2d-4282a07f34f3">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="d4803ad1-a372-40ce-b714-1df42ab75faafileName">Content-groups</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Content-groups" id="f46e4287-ddf9-470b-9233-65ce26068093" method="GET">
         <con:settings/>
         <con:parameters>
@@ -7038,6 +7093,12 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
           <con:parameter required="true">
+=======
+      <con:method name="Content-groups" id="67076822-86da-4cfb-8148-190c073131d9" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+>>>>>>> deepak
             <con:name>account_id</con:name>
             <con:value>${#Project#ACCOUNT_ID}</con:value>
             <con:style>QUERY</con:style>
@@ -7046,11 +7107,27 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
           <con:parameter required="true">
+<<<<<<< HEAD
+=======
+            <con:name>from_date</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>to_date</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+          </con:parameter>
+          <con:parameter>
+>>>>>>> deepak
             <con:name>offset</con:name>
             <con:value/>
             <con:style>QUERY</con:style>
             <con:default/>
           </con:parameter>
+<<<<<<< HEAD
           <con:parameter required="true">
             <con:name>From_date</con:name>
             <con:value/>
@@ -7065,6 +7142,14 @@
           </con:parameter>
         </con:parameters>
         <con:request name="Get All Content-Groups" id="9f2f3511-b03e-4e99-b3fb-d2d79773998a" mediaType="application/json">
+=======
+          <con:parameter>
+            <con:name>limit</con:name>
+            <con:style>QUERY</con:style>
+          </con:parameter>
+        </con:parameters>
+        <con:request name="Get All Content-Groups" id="c98ec0dc-3e18-4311-a012-cca53be06714" mediaType="application/json" postQueryString="false">
+>>>>>>> deepak
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
@@ -7078,6 +7163,7 @@
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters>
             <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
             <con:entry key="limit" value="10"/>
           </con:parameters>
           <con:parameterOrder>
@@ -7086,6 +7172,18 @@
             <con:entry>offset</con:entry>
             <con:entry>From_date</con:entry>
             <con:entry>To_Date</con:entry>
+=======
+            <con:entry key="offset" value=""/>
+            <con:entry key="to_date" value=""/>
+            <con:entry key="from_date" value=""/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>account_id</con:entry>
+            <con:entry>from_date</con:entry>
+            <con:entry>to_date</con:entry>
+            <con:entry>offset</con:entry>
+            <con:entry>limit</con:entry>
+>>>>>>> deepak
           </con:parameterOrder>
           <con:environmentSpec>
             <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -7105,6 +7203,23 @@
           </con:entry>
         </con:environmentSpec>
       </con:method>
+<<<<<<< HEAD
+=======
+      <con:method name="Refresh" id="122d6a1b-ab93-4c90-899b-fec8ab085a4a" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="32186dca-f9f9-4b61-8887-7e3192cc4677" mediaType="application/json" postQueryString="false">
+          <con:settings/>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+>>>>>>> deepak
       <con:environmentSpec>
         <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
           <con:authProfile>Inherit From Parent</con:authProfile>
@@ -7114,12 +7229,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Contents" path="/v1/social/contents" id="0b787ea6-89ac-4aac-8419-6abd927a8986">
+=======
+    <con:resource name="Contents" path="/v1/social/contents" id="06f7a718-6ec6-4b94-9004-af0fe0a93ebb">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="d947f884-96c7-416a-b86f-3879e4a3ea79fileName">Contents</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Contents" id="afef1679-07ad-44ec-9195-d1543c54118d" method="GET">
+=======
+      <con:method name="Contents" id="1377d61d-36eb-4fe5-bfde-349d16ccc6f3" method="GET">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter required="true">
@@ -7139,7 +7262,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Get All Contents" id="d23efa14-a176-45cb-9106-c113e418437c" mediaType="application/json">
+=======
+        <con:request name="Get All Contents" id="9d019a0e-0015-46a0-8ee3-58c6cecf38ac" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7183,12 +7310,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Refresh 2" path="/v1/social/content-groups/refresh" id="9fa1e0d1-b517-4175-ac4f-310803a1dbc5">
+=======
+    <con:resource name="Refresh 2" path="/v1/social/content-groups/refresh" id="89cfdcaa-6f12-461d-8f4c-be69b420f35f">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="ca857d72-0696-4a11-bbdb-738782c9cad2fileName">Refresh-2</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Refresh" id="81760c4f-3842-4683-a638-51a1efe5a10a" method="POST">
+=======
+      <con:method name="Refresh" id="49d6a59f-6b0a-4a1e-82fe-6c1523046799" method="POST">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter>
@@ -7208,7 +7343,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Refresh content-groups" id="45892db6-60da-42ac-aa41-8b7bfbbdc795" mediaType="application/json">
+=======
+        <con:request name="Refresh content-groups" id="e9c7416b-a767-4077-b4b2-a1aece56634f" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7252,12 +7391,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Refresh" path="/v1/social/contents/refresh" id="7f2b06d4-0c30-4527-8872-4e622383d46e">
+=======
+    <con:resource name="Refresh" path="/v1/social/contents/refresh" id="fbc8d40e-ba04-4c51-aad0-1cd95d6c1f9b">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="4fbd7e0a-c761-4fc1-ba1b-a7413ea48d9afileName">Refresh</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Refresh" id="f3da373a-a295-40b6-b888-91476d18cb61" method="POST">
+=======
+      <con:method name="Refresh" id="73a567c0-0614-4263-9cac-5525abf4cafc" method="POST">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter>
@@ -7277,7 +7424,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Refresh contents" id="72674f6f-c1a2-43e9-a0ea-820947b9822b" mediaType="application/json" postQueryString="false">
+=======
+        <con:request name="Refresh contents" id="f252a401-4d22-47fd-8cb5-39f05584cb46" mediaType="application/json" postQueryString="false">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7321,12 +7472,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Search 2" path="/v1/social/contents/search" id="3da0d5fa-83f5-4727-b744-8be1a76dc1f0">
+=======
+    <con:resource name="Search 2" path="/v1/social/contents/search" id="55d1d4ca-4c24-4903-ba27-4347b925f2b8">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="7eb5f3ff-8acf-43c7-adbc-1e3ea6bf4b7ffileName">Search-2</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Search" id="0f15d151-53d1-4c79-9c5c-d2d201d5eecb" method="POST">
+=======
+      <con:method name="Search" id="31f14f86-fe0e-4567-8572-20f5c0fb1f69" method="POST">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter>
@@ -7346,7 +7505,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Post search for contents" id="c8a52e26-29e5-48cd-898e-b3bb10206470" mediaType="application/json">
+=======
+        <con:request name="Post search for contents" id="f58069eb-3b13-4387-862f-0312b8c7a2f2" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7390,12 +7553,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Search 3" path="/v1/social/content-groups/search" id="98cec037-e939-4804-bbc3-ed7899fd0d38">
+=======
+    <con:resource name="Search 3" path="/v1/social/content-groups/search" id="426cbc71-b2a2-4115-bb3c-6c8db62afb7b">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="942ae32d-c47c-466b-aca1-d5801e6ba0d8fileName">Search-3</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Search" id="fb244f35-5818-404e-9080-41c4e3dab4d4" method="POST">
+=======
+      <con:method name="Search" id="5de381e2-8c11-4234-916e-948b8d9d001c" method="POST">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter>
@@ -7415,7 +7586,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Post search for content-groups" id="bbcddb99-2db8-4821-af35-768a17422c1b" mediaType="application/json">
+=======
+        <con:request name="Post search for content-groups" id="2b76dabb-a59d-40a8-b350-82b8219f5dc4" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7459,12 +7634,20 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
     <con:resource name="Search" path="/v1/social/income/transactions/search" id="0b279980-effb-41ea-bc50-ae1052c2493f">
+=======
+    <con:resource name="Search" path="/v1/social/income/transactions/search" id="090eef61-bcda-4c19-9392-c2cd7b447b5f">
+>>>>>>> deepak
       <con:settings>
         <con:setting id="39e088d4-d045-4d6f-873b-1a436dbc82c7fileName">Search</con:setting>
       </con:settings>
       <con:parameters/>
+<<<<<<< HEAD
       <con:method name="Search" id="d698ba84-d864-44a3-a886-d17c82962c11" method="POST">
+=======
+      <con:method name="Search" id="2a5e9789-3df4-4d50-90c3-98603cb0ba70" method="POST">
+>>>>>>> deepak
         <con:settings/>
         <con:parameters>
           <con:parameter>
@@ -7484,7 +7667,11 @@
             <con:description xsi:nil="true"/>
           </con:parameter>
         </con:parameters>
+<<<<<<< HEAD
         <con:request name="Post search for income transaction" id="208a3a17-eec5-4ef3-a941-def467616806" mediaType="application/json">
+=======
+        <con:request name="Post search for income transaction" id="671d0475-85be-4bca-92e2-0750a73804ee" mediaType="application/json">
+>>>>>>> deepak
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
@@ -7528,6 +7715,7 @@
         </con:entry>
       </con:environmentSpec>
     </con:resource>
+<<<<<<< HEAD
   </con:interface>
   <con:interface xsi:type="con:RestService" id="e990ec86-03ec-4e9c-82e0-02eca4b3aa73" wadlVersion="http://wadl.dev.java.net/2009/02" name="Internal_SK" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings>
@@ -8014,12 +8202,30 @@
           <con:settings/>
           <con:endpoint>${#Project#BASE_URL}</con:endpoint>
           <con:request/>
+=======
+    <con:resource name="Group" path="v1/social/content-group" id="3b8b3c6a-5f73-4e79-b06d-74557654fcde">
+      <con:settings>
+        <con:setting id="8a0432b1-c038-4fc9-ba23-a1403bc31e6dfileName">Group</con:setting>
+      </con:settings>
+      <con:parameters/>
+      <con:method name="Group" id="943ad4ff-2045-4873-a08b-337a2ef4ad6e" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Get All Content-Group" id="c0f5274b-4bda-468c-82cd-68b36fc9c611" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+>>>>>>> deepak
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters>
+<<<<<<< HEAD
             <con:entry key="sdk-type" value="WEB"/>
             <con:entry key="Authorization" value="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMGE0YWEwM2UtZDlmNy00ZjBjLThkYmQtNTdlMmE2NWEzNzcyIiwidGVuYW50X2lkIjoiZDAwN2JiZDEtOTcxYS00N2Q3LTg5NTktYzBmNzQwMTRlYjBiIiwidGVuYW50X2FwcF9pZCI6IjUzYzQwZTg3LTRkNzEtNDc0NC04ZTA1LTU1NTI1MDg0MDgwMiIsInByb2R1Y3RzIjpbIkVOR0FHRU1FTlQiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3YxL2ludGVybmFsIiwiaWF0IjoxNjUxNzM0MjgzLjcxMzgzOSwiZXhwIjoxNjUyMzM5MDgzLjcxMzgyN30.ikz0jOBZ5fnfB0_yiRTj2G_SHl0wRbG2B0G6dXvNl1A"/>
             <con:entry key="sdk-version" value="1.0"/>
@@ -8679,6 +8885,21 @@
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
             <con:entry environmentId="edb0712e-96dd-4f71-a4d6-737db8baf642">
+=======
+            <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+            <con:entry key="offset" value=""/>
+            <con:entry key="limit" value="10"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>account_id</con:entry>
+            <con:entry>from date</con:entry>
+            <con:entry>to date</con:entry>
+            <con:entry>limit</con:entry>
+            <con:entry>offset</con:entry>
+          </con:parameterOrder>
+          <con:environmentSpec>
+            <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+>>>>>>> deepak
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
             <con:entry environmentId="df05e205-53d4-45c7-aa40-fbd21cb6f3f4">
@@ -8686,6 +8907,7 @@
             </con:entry>
           </con:environmentSpec>
         </con:request>
+<<<<<<< HEAD
         <con:environmentSpec>
           <con:entry environmentId="1def32b0-8e57-405f-b5ac-f6ac7804a7a7">
             <con:authProfile>Inherit From Parent</con:authProfile>
@@ -8709,6 +8931,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
+=======
+      </con:method>
+>>>>>>> deepak
     </con:resource>
   </con:interface>
   <con:testSuite id="8b57a1a6-5dd2-44ed-be4f-0225411606d8" name="Tenant And User Details">
@@ -13802,6 +14027,7 @@ driver.quit()</script>
       <con:reportParameters/>
     </con:testCase>
   </con:testSuite>
+<<<<<<< HEAD
   <con:testSuite id="417fcec1-ce49-4777-bb5c-34943d831991" name="INTERNAL_SK">
     <con:settings>
       <con:setting id="d1f7a9b0-94dd-462a-98cd-0767c2b54d96fileName">INTERNAL</con:setting>
@@ -16766,12 +16992,16 @@ driver.quit()</script>
     </con:testCase>
   </con:testSuite>
   <con:testSuite id="eb37bcd8-7f91-4981-b513-e05c99858401" name="Engagements">
+=======
+  <con:testSuite id="041e1b4e-30f6-4184-ac02-5fe0c6ab11b2" name="EngagementDK">
+>>>>>>> deepak
     <con:settings>
       <con:setting id="e9ebbaed-4908-4b90-9911-0a2ddf48136efileName">Engagement2</con:setting>
     </con:settings>
     <con:runType>SEQUENTIAL</con:runType>
     <con:properties/>
     <con:reportParameters/>
+<<<<<<< HEAD
     <con:testCase id="7b02a747-7ad8-4526-af89-3e717306eebe" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Contents Group Positive Test cases" searchProperties="true" timeout="0" disabled="true">
       <con:settings>
         <con:setting id="ee254cfc-ce39-4fab-a78b-2519586c6960fileName">Get-Contents-Group-Positive-Test-cases</con:setting>
@@ -16779,6 +17009,15 @@ driver.quit()</script>
       <con:testStep type="restrequest" name="TC51_Validate the api by passing valid client id and client secret. 200" id="f37b2a61-b42c-48e6-a5f7-369ae888f5e3">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+    <con:testCase id="e0b90681-a3e9-4a5c-810f-17f6a6d611c0" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Contents Group Positive Test cases" searchProperties="true" timeout="0">
+      <con:settings>
+        <con:setting id="ee254cfc-ce39-4fab-a78b-2519586c6960fileName">Get-Contents-Group-Positive-Test-cases</con:setting>
+      </con:settings>
+      <con:testStep type="restrequest" name="TC51_Validate the api by passing valid client id and client secret. 200" id="36c02a71-3495-42f9-9e78-69314bbf4bd6">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC51_Validate the api by passing valid client id and client secret. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -16800,6 +17039,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value="1"/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="to date" value=""/>
@@ -16810,6 +17050,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -16819,9 +17071,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC54_Validate the api by passing tenant which don't have engagement product subscription. 200" id="008e4106-4d18-4b80-a27d-ef7bd48f7127">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC54_Validate the api by passing tenant which don't have engagement product subscription. 200" id="acc4d057-e598-45d7-befd-d5de7e29c6af">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC54_Validate the api by passing tenant which don't have engagement product subscription. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -16841,6 +17099,7 @@ driver.quit()</script>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
+<<<<<<< HEAD
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value="1"/>
               <con:entry key="from date" value=""/>
@@ -16854,6 +17113,19 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="1"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -16863,17 +17135,30 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC55_Validate the api by passing disconnected account id. 200" id="563a19a3-82f0-414e-88d0-2f0db277cb71">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC55_Validate the api by passing disconnected account id. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC55_Validate the api by passing disconnected account id. 200" id="edef0d13-d2fd-4c2f-a80c-ba328185d3db">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC55_Validate the api by passing disconnected account id. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
             <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+<<<<<<< HEAD
             <con:assertion type="Valid HTTP Status Codes" id="202a19d2-7e0b-4bae-b199-6c8f450a765e" name="Valid HTTP Status Codes">
+=======
+            <con:assertion type="Valid HTTP Status Codes" id="590de703-66c3-4a63-ac0c-6c1f1014e3b6" name="Valid HTTP Status Codes">
+>>>>>>> deepak
               <con:settings/>
               <con:configuration>
                 <codes>200</codes>
@@ -16887,6 +17172,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value="10"/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -16898,6 +17184,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -16907,12 +17205,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC58_Validate the api without passing the limit in query parameter.200" id="0fd18a1d-40d5-4dbe-96b2-3d7fb400b709">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC58_Validate the api without passing the limit in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC58_Validate the api without passing the limit in query parameter.200" id="15727733-cc70-4620-ab66-f9bd2e76494a">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC58_Validate the api without passing the limit in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -16931,6 +17238,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value="10"/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="001"/>
@@ -16942,6 +17250,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -16951,9 +17271,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="T60_Validate the api by passing minimum offset in query parameter.200" id="c814c1d3-4203-4b81-9efd-326f2fedcc99">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="T60_Validate the api by passing minimum offset in query parameter.200" id="74bcf0b6-6b16-4154-8199-c5f84d6a87e3">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="T60_Validate the api by passing minimum offset in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -16973,6 +17299,7 @@ driver.quit()</script>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
+<<<<<<< HEAD
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value="10"/>
               <con:entry key="from date" value=""/>
@@ -16986,6 +17313,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="1"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -16995,9 +17334,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC61_Validate the api without passing the offset in query parameter.200" id="576809c6-f9b9-42ce-95e2-90d662888c42">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC61_Validate the api without passing the offset in query parameter.200" id="6dbc9413-7765-4260-b913-533db452fa5c">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC61_Validate the api without passing the offset in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17018,6 +17363,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="0"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -17030,6 +17376,19 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17039,9 +17398,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC62_Validate the api by passing session expired account id.200" id="f8647892-99ba-4710-a022-d912988b1dd2">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC62_Validate the api by passing session expired account id.200" id="b557abb3-8c2f-480c-a220-09c11b5dbac7">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC62_Validate the api by passing session expired account id.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17063,6 +17428,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value="10"/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17078,14 +17444,36 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>Inherit From Parent</con:authProfile>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+>>>>>>> deepak
               </con:entry>
             </con:environmentSpec>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC63_Validate the api response by verifying that contents should be displayed on recency.200" id="fc05dd64-fded-4e2b-be30-145c4bc2b3cc">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC63_Validate the api response by verifying that contents should be displayed on recency.200" id="64d81b32-300b-42b4-b4ea-315535e2cab3">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC63_Validate the api response by verifying that contents should be displayed on recency.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17106,6 +17494,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="10"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -17122,14 +17511,36 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>ClientProfile</con:authProfile>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+>>>>>>> deepak
               </con:entry>
             </con:environmentSpec>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC64_Validate the api response by verifying that engagement of a user is displying properly or not200" id="b42b0751-e8f7-4e88-9a96-14424bdac307">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC64_Validate the api response by verifying that engagement of a user is displying properly or not200" id="2dedc884-4901-430b-9920-ed879578ba30">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC64_Validate the api response by verifying that engagement of a user is displying properly or not200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17150,6 +17561,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="10"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -17162,6 +17574,19 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17171,9 +17596,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC65_Validate the api response,by verifying each and every attributes is displaying against the requirement. 200" id="f31048c3-675a-4328-aeba-5d8a55f3add7">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC65_Validate the api response,by verifying each and every attributes is displaying against the requirement. 200" id="f510c798-28cc-4f08-8bfa-89de53f2f05d">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC65_Validate the api response,by verifying each and every attributes is displaying against the requirement. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17194,6 +17625,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="10"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -17206,6 +17638,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17215,12 +17659,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC66_Validate the api response by verifying that response should displyed on reverse chronological order after each crawler run. 200" id="95280773-5e37-423c-9d4f-c038aac80668">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC66_Validate the api response by verifying that response should displyed on reverse chronological order after each crawler run. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC66_Validate the api response by verifying that response should displyed on reverse chronological order after each crawler run. 200" id="3f1ab94b-dbce-4f82-9547-8fabd99f4d4a" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC66_Validate the api response by verifying that response should displyed on reverse chronological order after each crawler run. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17238,6 +17691,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="10"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -17254,14 +17708,37 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>ClientProfile</con:authProfile>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+>>>>>>> deepak
               </con:entry>
             </con:environmentSpec>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC67_Validate the api response when engagement product status is SYNCED in accounts api.200" id="cd94d0aa-cb54-4cd3-8623-8beb82371cbb" disabled="true">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC67_Validate the api response when engagement product status is SYNCED in accounts api.200" id="f9c9e713-57a1-4a5b-beed-3ac2f8536cf4" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC67_Validate the api response when engagement product status is SYNCED in accounts api.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -17283,6 +17760,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17294,6 +17772,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17303,12 +17792,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC68_Validate the api response when engagement product status is PARTIAL_SYNCED in accounts api. 200" id="888c1b4d-fa05-42b5-b844-dbb9e62a4e40" disabled="true">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC68_Validate the api response when engagement product status is PARTIAL_SYNCED in accounts api. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC68_Validate the api response when engagement product status is PARTIAL_SYNCED in accounts api. 200" id="070e6761-f8f8-4638-8e4b-ca9a7e504d60" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC68_Validate the api response when engagement product status is PARTIAL_SYNCED in accounts api. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17326,6 +17824,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="10"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -17342,14 +17841,37 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>ClientProfile</con:authProfile>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+>>>>>>> deepak
               </con:entry>
             </con:environmentSpec>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC70_Validate the api by making the account as private and try to get the content information.200" id="45ba3b65-3605-4c22-a763-99699c9ee3eb" disabled="true">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC70_Validate the api by making the account as private and try to get the content information.200" id="3ba82c5c-0a61-4b28-b5ff-dd265031c20d" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC70_Validate the api by making the account as private and try to get the content information.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17372,6 +17894,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17383,6 +17906,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17394,9 +17928,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC71_Validate the api by making any video as private and check whether its fetching or not.200" id="6f488f13-94b1-42d5-966e-8e7fc6786f68" disabled="true">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC71_Validate the api by making any video as private and check whether its fetching or not.200" id="96ab9652-d3dd-4578-9132-6209cf6a0e03" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC71_Validate the api by making any video as private and check whether its fetching or not.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17419,6 +17959,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17430,6 +17971,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17441,9 +17994,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC72_Validate the api by without granting the content fetching permission while authorising. 200" id="6306c2f7-1986-438e-b534-1c85f3459ab9" disabled="true">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC72_Validate the api by without granting the content fetching permission while authorising. 200" id="baae6d16-3370-4b68-87b3-39c400e53c5e" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC72_Validate the api by without granting the content fetching permission while authorising. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17465,6 +18024,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17476,6 +18036,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17487,17 +18059,30 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC73_Validate the api by granting the content fetching permission while authorising.200" id="6ef8e6a9-e402-42e5-b6e7-4e45b5d262a6" disabled="true">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC73_Validate the api by granting the content fetching permission while authorising.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC74_Validate the api by verifying that crawler should refresh only last 90 days contents at max.200" id="28c02f6c-7e8b-4435-af2d-e9e65f46ca8a" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC74_Validate the api by verifying that crawler should refresh only last 90 days contents at max.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
             <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+<<<<<<< HEAD
             <con:assertion type="Valid HTTP Status Codes" id="d03885e5-d090-4b1d-9c7c-fd1125238b7b" name="Valid HTTP Status Codes">
+=======
+            <con:assertion type="Valid HTTP Status Codes" id="97e4c674-3312-46eb-b4c5-5c6a0a45ce38" name="Valid HTTP Status Codes">
+>>>>>>> deepak
               <con:settings/>
               <con:configuration>
                 <codes>200</codes>
@@ -17512,6 +18097,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17523,6 +18109,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17534,6 +18131,7 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC74_Validate the api by verifying that crawler should refresh only last 90 days contents at max.200" id="ff534173-822b-4ca2-9a55-a6b6381a6f9e">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -17586,6 +18184,11 @@ driver.quit()</script>
       <con:testStep type="restrequest" name="TC75_Validate the api by verifying that if the account has no collection/albums in last 90 days.200" id="8cf606c4-8d8d-4cc1-bed7-2d0f03e8e620">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC75_Validate the api by verifying that if the account has no collection/albums in last 90 days.200" id="5387228d-6e89-46dc-82c4-ad5a1b4c4243">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC75_Validate the api by verifying that if the account has no collection/albums in last 90 days.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17606,6 +18209,7 @@ driver.quit()</script>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
+<<<<<<< HEAD
               <con:entry key="To_Date" value="2023-02-08"/>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="from date" value=""/>
@@ -17620,6 +18224,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17631,12 +18247,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC76_Validate the api by verifying that refresh crawler will fetch last 90 days collection/album or not.200" id="9f9d1ea7-b6da-4312-92a5-fb0a7a318ae0">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC76_Validate the api by verifying that refresh crawler will fetch last 90 days collection/album or not.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC76_Validate the api by verifying that refresh crawler will fetch last 90 days collection/album or not.200" id="d95fdb2f-7787-46d1-8da7-84ffcd910f1a" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC76_Validate the api by verifying that refresh crawler will fetch last 90 days collection/album or not.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17650,6 +18275,7 @@ driver.quit()</script>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+<<<<<<< HEAD
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -17673,6 +18299,28 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>ClientProfile</con:authProfile>
+=======
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+>>>>>>> deepak
                 <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
                 <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
               </con:entry>
@@ -17680,12 +18328,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC77_Validate the api by verifying that when crawler refresh the data after 24 hour.200" id="f956e287-8941-4341-a3c6-47bd52542018">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC77_Validate the api by verifying that when crawler refresh the data after 24 hour.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC77_Validate the api by verifying that when crawler refresh the data after 24 hour.200" id="8ff1830b-edb1-4ebe-a278-ba367d9582bc" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC77_Validate the api by verifying that when crawler refresh the data after 24 hour.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17699,6 +18356,7 @@ driver.quit()</script>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+<<<<<<< HEAD
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -17722,6 +18380,28 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>ClientProfile</con:authProfile>
+=======
+              <con:authType>Global HTTP Settings</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>Basic</con:authProfile>
+>>>>>>> deepak
                 <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
                 <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
               </con:entry>
@@ -17729,9 +18409,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC78_Validate the api by verifying that when crawler fails to refresh the data in 1st attempt.200" id="ffd5e3bd-681d-468d-a612-ae5614e60b6a">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC78_Validate the api by verifying that when crawler fails to refresh the data in 1st attempt.200" id="162b768d-3a2e-47d2-b092-e52a3df01d59" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC78_Validate the api by verifying that when crawler fails to refresh the data in 1st attempt.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17752,6 +18438,7 @@ driver.quit()</script>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17763,6 +18450,20 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17774,9 +18475,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC79_Validate the api by verifying that when crawler fails to refresh the data in repetitive attempts.200" id="a5f499d9-47b0-4166-a7d8-4fe98b1febdf">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC79_Validate the api by verifying that when crawler fails to refresh the data in repetitive attempts.200" id="8698afff-b090-49b0-92a2-d3ec9ea18bb4" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC79_Validate the api by verifying that when crawler fails to refresh the data in repetitive attempts.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -17799,6 +18506,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17810,6 +18518,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -17821,12 +18540,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC80_Validate the api by passing account id,product name and from date in account refresh api for historical search.200" id="5ec61600-be8d-4e17-9044-5ae191c06fb4">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC80_Validate the api by passing account id,product name and from date in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC80_Validate the api by passing account id,product name and from date in account refresh api for historical search.200" id="33d3a9cb-bb8f-407f-b1e4-c37f722c7b4f">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC80_Validate the api by passing account id,product name and from date in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17841,12 +18569,17 @@ driver.quit()</script>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
               <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+<<<<<<< HEAD
               <con:authType>Global HTTP Settings</con:authType>
+=======
+              <con:authType>No Authorization</con:authType>
+>>>>>>> deepak
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -17862,6 +18595,22 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>Basic</con:authProfile>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value="2023-02-07"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+>>>>>>> deepak
                 <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
                 <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
               </con:entry>
@@ -17869,12 +18618,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC81_Validate the api by passing account id,product name and from date which is older than 365 days in account refresh api for historical search.200" id="eb9545ba-6ed9-466c-936f-a8528f1c32f3">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC81_Validate the api by passing account id,product name and from date which is older than 365 days in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC81_Validate the api by passing account id,product name and from date which is older than 365 days in account refresh api for historical search.200" id="c1f6d507-558d-4f8a-8f52-413f5149e487">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC81_Validate the api by passing account id,product name and from date which is older than 365 days in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17888,6 +18646,7 @@ driver.quit()</script>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+<<<<<<< HEAD
               <con:authType>Global HTTP Settings</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -17909,6 +18668,26 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>Basic</con:authProfile>
+=======
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="to_date" value="2022-12-12"/>
+              <con:entry key="from_date" value="2021-12-12"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+>>>>>>> deepak
                 <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
                 <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
               </con:entry>
@@ -17916,12 +18695,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC82_Validate the api without passing mandatory params like account id,product name and from date in account refresh api for historical search.200" id="fa2c3b82-4836-4457-b696-95c44a87274c">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC82_Validate the api without passing mandatory params like account id,product name and from date in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC82_Validate the api without passing mandatory params like account id,product name and from date in account refresh api for historical search.200" id="e276544e-5804-426e-846d-296e2a305fc5">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC82_Validate the api without passing mandatory params like account id,product name and from date in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17935,6 +18723,7 @@ driver.quit()</script>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+<<<<<<< HEAD
               <con:authType>Global HTTP Settings</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -17956,6 +18745,29 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>Basic</con:authProfile>
+=======
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value=""/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value="2023-02-01"/>
+              <con:entry key="from_date" value="2023-01-01"/>
+              <con:entry key="From date" value=""/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+>>>>>>> deepak
                 <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
                 <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
               </con:entry>
@@ -17963,12 +18775,21 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC83_Validate the api by passing identity as product name in account refresh api for historical search.200" id="1861723d-c385-4f28-a01b-654d3239b763">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC83_Validate the api by passing identity as product name in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC83_Validate the api by passing identity as product name in account refresh api for historical search.200" id="e307106b-6749-4bf0-9a54-b56d54ed9be2">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC83_Validate the api by passing identity as product name in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
@@ -17982,11 +18803,16 @@ driver.quit()</script>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+<<<<<<< HEAD
               <con:authType>Global HTTP Settings</con:authType>
+=======
+              <con:authType>No Authorization</con:authType>
+>>>>>>> deepak
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value=""/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -18003,6 +18829,24 @@ driver.quit()</script>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>Basic</con:authProfile>
+=======
+              <con:entry key="offset" value="10"/>
+              <con:entry key="from_date" value="2023-01-01"/>
+              <con:entry key="to_date" value="2023-01-01"/>
+              <con:entry key="From date" value=""/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+>>>>>>> deepak
                 <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
                 <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
               </con:entry>
@@ -18010,17 +18854,30 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC84_Validate the api by passing income as product name in account refresh api for historical search.200" id="e6293543-6530-46c6-b9ba-ece7d5d6e4bb">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC84_Validate the api by passing income as product name in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+=======
+      <con:testStep type="restrequest" name="TC73_Validate the api by granting the content fetching permission while authorising.200" id="f02773b3-2aeb-43fb-bac6-adde221fd61e" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC73_Validate the api by granting the content fetching permission while authorising.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="${#Project#AUTHORIZATION_ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+>>>>>>> deepak
             </con:settings>
             <con:endpoint>${#Project#BASE_URL}</con:endpoint>
             <con:request/>
             <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+<<<<<<< HEAD
             <con:assertion type="Valid HTTP Status Codes" id="98d11cf2-a2c9-4043-b7db-510d4efcacdf" name="Valid HTTP Status Codes">
+=======
+            <con:assertion type="Valid HTTP Status Codes" id="d03885e5-d090-4b1d-9c7c-fd1125238b7b" name="Valid HTTP Status Codes">
+>>>>>>> deepak
               <con:settings/>
               <con:configuration>
                 <codes>200</codes>
@@ -18035,6 +18892,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18046,10 +18904,70 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
                 <con:authProfile>Basic</con:authProfile>
+<<<<<<< HEAD
+=======
+                <con:username>44338d4b-5c37-4f82-ad4a-e0d32d6f0692</con:username>
+                <con:password>130f738d-dc44-4cd1-9d6f-ead85e9d0b1b</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC84_Validate the api by passing income as product name in account refresh api for historical search.200" id="1187611c-c4db-4b44-8140-0c62bb931997">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC84_Validate the api by passing income as product name in account refresh api for historical search.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="98d11cf2-a2c9-4043-b7db-510d4efcacdf" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+>>>>>>> deepak
                 <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
                 <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
               </con:entry>
@@ -18057,9 +18975,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC69_Validate the api response when engagement product status is NOT_SYNCED in accounts api. 200" id="8add5ce8-37e5-4177-b3a1-87f93310aec8">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC69_Validate the api response when engagement product status is NOT_SYNCED in accounts api. 200" id="4d655a46-ae4b-4911-84fa-f390074b8602" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC69_Validate the api response when engagement product status is NOT_SYNCED in accounts api. 200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -18081,6 +19005,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18092,6 +19017,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18101,9 +19037,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC85_Validate the api by passing from date and to date in query parameter for historical search and time period was 365 days at max.200" id="934642eb-7eca-4e63-a35f-f2ee77c3997d">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC85_Validate the api by passing from date and to date in query parameter for historical search and time period was 365 days at max.200" id="f073413b-771f-4217-864e-35d08b73b6f8" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC85_Validate the api by passing from date and to date in query parameter for historical search and time period was 365 days at max.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18125,6 +19067,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18136,6 +19079,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18145,9 +19099,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC86_Validate the api by passing from date and to date in query parameter for historical search and time period was more than 365 days.200" id="0d67935c-af73-4862-898c-cc9758414e68">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC86_Validate the api by passing from date and to date in query parameter for historical search and time period was more than 365 days.200" id="f1787121-9f9f-49e1-b842-364fc7141404" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC86_Validate the api by passing from date and to date in query parameter for historical search and time period was more than 365 days.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18169,6 +19129,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18180,6 +19141,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18189,9 +19161,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC89_Validate the api by passing only from date in the query parameter.200" id="a3bce267-a87b-4641-9cb5-bd3cc7be34f2">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC89_Validate the api by passing only from date in the query parameter.200" id="8c380a7e-ab3d-40ed-8545-0bad531521ee">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC89_Validate the api by passing only from date in the query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18213,6 +19191,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="0"/>
               <con:entry key="from date" value="2023-02-08"/>
               <con:entry key="From date" value=""/>
@@ -18224,6 +19203,19 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value="2023-02-08"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18235,6 +19227,7 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC90_Validate the api response by passing from date and to date in query parameter.200" id="4d72c0e4-3980-4486-b95d-0a6b58f80651">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -18285,6 +19278,11 @@ driver.quit()</script>
       <con:testStep type="restrequest" name="TC96_Validate the api response by passing same from date and to date in query parameter.200" id="a9d44189-1357-4f60-beb4-c5332b19be7f">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC96_Validate the api response by passing same from date and to date in query parameter.200" id="24b541b1-8bc3-4bda-b21a-70951a3f1eeb">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC96_Validate the api response by passing same from date and to date in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18306,6 +19304,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="from date" value="2023-02-08"/>
               <con:entry key="offset" value="0"/>
               <con:entry key="From date" value="2023/06/12"/>
@@ -18318,6 +19317,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value="2023-02-08"/>
+              <con:entry key="from_date" value="2023-02-08"/>
+              <con:entry key="From date" value="2023/06/12"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18329,9 +19340,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC97_Validate the api response by passing from_date more than current date.200" id="af47e063-cfee-4ece-8f47-868dbbcb4f9e">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC97_Validate the api response by passing from_date more than current date.200" id="6d83caa0-83f7-41b7-873d-7becdad2bb67">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC97_Validate the api response by passing from_date more than current date.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18353,6 +19370,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="100"/>
               <con:entry key="from date" value="2023-02-10"/>
               <con:entry key="limit" value="10"/>
@@ -18363,6 +19381,63 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="10"/>
+              <con:entry key="from_date" value="2023-01-01"/>
+              <con:entry key="to_date" value="2023-02-02"/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+            </con:parameterOrder>
+            <con:environmentSpec>
+              <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
+                <con:authProfile>ClientProfile</con:authProfile>
+                <con:username>c906373f-d69c-4b5f-899e-1dccf6c408c3</con:username>
+                <con:password>ba3c7bc7-4288-4a19-bd7a-757bb6e9dd6a</con:password>
+              </con:entry>
+            </con:environmentSpec>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC90_Validate the api response by passing from date and to date in query parameter.200" id="5cd49f6d-cb07-4b74-b9d9-8306faafee30">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC90_Validate the api response by passing from date and to date in query parameter.200" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#BASE_URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.dev.getphyllo.com/v1/social/content-groups</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="ba18900f-37e3-4c2e-854c-786d5ad5b010" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+              <con:entry key="offset" value="10"/>
+              <con:entry key="to_date" value="2023-02-10"/>
+              <con:entry key="from_date" value="2023-01-02"/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18377,6 +19452,7 @@ driver.quit()</script>
       <con:properties/>
       <con:reportParameters/>
     </con:testCase>
+<<<<<<< HEAD
     <con:testCase id="aa282e06-0195-4c95-b5da-6e12493ac623" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Contents Group Negative Test cases" searchProperties="true" timeout="0" disabled="true">
       <con:settings>
         <con:setting id="9f3678c9-4102-4f07-8f8a-6fefb90e989bfileName">Get-Contents-Group-Negative-Test-cases</con:setting>
@@ -18384,6 +19460,15 @@ driver.quit()</script>
       <con:testStep type="restrequest" name="TC52_Validate the api by passing invalid client id and client secret. 401" id="eadd272e-dbbe-4a74-804c-a75f1f733533">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+    <con:testCase id="527ff3d9-fbf5-4070-86f9-08b06648a3e4" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Get Contents Group Negative Test cases" searchProperties="true" timeout="0">
+      <con:settings>
+        <con:setting id="9f3678c9-4102-4f07-8f8a-6fefb90e989bfileName">Get-Contents-Group-Negative-Test-cases</con:setting>
+      </con:settings>
+      <con:testStep type="restrequest" name="TC52_Validate the api by passing invalid client id and client secret. 401" id="aa8a5272-1be8-4350-95c5-2768dc56bdf1">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC52_Validate the api by passing invalid client id and client secret. 401" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -18404,6 +19489,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18415,6 +19501,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18424,9 +19521,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC53_Validate the api by passing inactive client id and client secret.403" id="6b4b8503-f822-4694-ba1e-e9b45cee8d15">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC53_Validate the api by passing inactive client id and client secret.403" id="eef1112e-c70b-4ef8-8dc2-eef7d8a31517" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC53_Validate the api by passing inactive client id and client secret.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -18447,6 +19550,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18458,6 +19562,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18467,9 +19582,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC55_Validate the api by passing disconnected account id.400" id="26b8a387-c65b-4114-93bd-feb98bbacf09">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC55_Validate the api by passing disconnected account id.400" id="dba0707d-1629-43d8-a9af-f3bd0e2332e0" disabled="true">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC55_Validate the api by passing disconnected account id.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -18485,6 +19606,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18496,6 +19618,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18505,9 +19638,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC56_Validate the api by passing maximum limit in query parameter. 400" id="dd1a16cd-42fb-4091-a54f-f97559e8b97a">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC56_Validate the api by passing maximum limit in query parameter. 400" id="0f4bc641-8824-460d-aa11-10d76b236fff">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC56_Validate the api by passing maximum limit in query parameter. 400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18529,6 +19668,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="limit" value="122222222"/>
             </con:parameters>
@@ -18538,6 +19678,16 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18550,9 +19700,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC57_Validate the api by passing zero limit in query parameter.400" id="f71765e8-7975-4a06-9d98-51b1db455f5a">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC57_Validate the api by passing zero limit in query parameter.400" id="9cced1b2-495f-4c06-9983-66521c549f93">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC57_Validate the api by passing zero limit in query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18573,6 +19729,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="0"/>
@@ -18584,6 +19741,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18593,10 +19761,17 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC59_Validate the api by passing maximum offset in query parameter,400" id="5df07c38-aa81-4ba5-ac5a-6dd47c9c9570">
         <con:settings/>
         <con:config service="EngagementSK" methodName="Content-groups" resourcePath="/v1/social/content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC59_Validate the api by passing maximum offset in query parameter,400" id="ca55fcc5-7058-4e40-a91c-d9c718e2f2b6" mediaType="application/json">
+=======
+      <con:testStep type="restrequest" name="TC59_Validate the api by passing maximum offset in query parameter,400" id="c54f9154-3824-4ea0-862f-4016b95910e3">
+        <con:settings/>
+        <con:config service="Engagement_DK" methodName="Content-groups" resourcePath="/v1/social/content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC59_Validate the api by passing maximum offset in query parameter,400" id="ca55fcc5-7058-4e40-a91c-d9c718e2f2b6" mediaType="application/json" postQueryString="false">
+>>>>>>> deepak
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
             </con:settings>
@@ -18616,6 +19791,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
+<<<<<<< HEAD
               <con:entry key="offset" value="55555555555555"/>
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
@@ -18628,6 +19804,19 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="567654637437434"/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18637,9 +19826,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC87_Validate the api by changing the end points in the url.403" id="c6b23d25-16f2-413a-a593-5194aac46388">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC87_Validate the api by changing the end points in the url.403" id="486bd1fb-abf6-42fe-9785-9db8504afde0">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-group" methodName="Group" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC87_Validate the api by changing the end points in the url.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18662,6 +19857,7 @@ driver.quit()</script>
             <con:parameters>
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18673,6 +19869,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18684,10 +19892,17 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC88_Validate the api by changing the http methods.403" id="da4fda74-577c-47fd-8e7c-ebae404e00f4">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="TC88_Validate the api by changing the http methods.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
+=======
+      <con:testStep type="restrequest" name="TC88_Validate the api by changing the http methods.403" id="5ef0c035-8c52-425b-8084-d5a585dc9bdc">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC88_Validate the api by changing the http methods.403" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json" postQueryString="false">
+>>>>>>> deepak
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
@@ -18707,6 +19922,7 @@ driver.quit()</script>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
+<<<<<<< HEAD
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
               <con:entry key="from date" value=""/>
@@ -18720,6 +19936,20 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="account_id" value=""/>
+              <con:entry key="offset" value=""/>
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18731,9 +19961,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC91_Validate the api response by passing only to date in the query parameter.400" id="c89a2957-55ff-459c-a148-2b5cda13c972">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC91_Validate the api response by passing only to date in the query parameter.400" id="6eae9030-fc84-4bea-a482-b39c34b4b8df">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC91_Validate the api response by passing only to date in the query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18755,6 +19991,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="From date" value=""/>
               <con:entry key="limit" value="10"/>
@@ -18766,6 +20003,18 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value="2023-02-08"/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18777,9 +20026,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC92_Validate the api response by passing to_date more than current date.400" id="0de8f9f0-1105-44b3-ae24-9e615e22c3b4">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC92_Validate the api response by passing to_date more than current date.400" id="fe7ac136-d0e1-4f6a-86fd-b4dfa9006b27">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC92_Validate the api response by passing to_date more than current date.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18800,6 +20055,7 @@ driver.quit()</script>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
+<<<<<<< HEAD
               <con:entry key="account_id" value="${#Project#ACCOUNT_ID}"/>
               <con:entry key="offset" value=""/>
               <con:entry key="from date" value="2023-02-08"/>
@@ -18813,6 +20069,20 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="offset" value="10"/>
+              <con:entry key="from_date" value="2023-03-03"/>
+              <con:entry key="to_date" value="2023-03-03"/>
+              <con:entry key="From date" value=""/>
+              <con:entry key="limit" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+              <con:entry>limit</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18824,9 +20094,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC93_Validate the api response by passing to_date lesser than from date. 400" id="68eaf56e-d332-4316-bbfb-f0723998eda7">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC93_Validate the api response by passing to_date lesser than from date. 400" id="780e5aae-8b85-4181-8330-fbd6be05011a">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC93_Validate the api response by passing to_date lesser than from date. 400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18849,6 +20125,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value="2023-02-08"/>
               <con:entry key="From date" value="2023/06/23"/>
               <con:entry key="to date" value="2023-01-02"/>
@@ -18859,6 +20136,17 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+              <con:entry key="From date" value="2023/06/23"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18870,9 +20158,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC94_Validate the api response by passing invalid from date in query parameter.400" id="bb971084-c845-4cb3-adc3-d1a9c2b70768">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC94_Validate the api response by passing invalid from date in query parameter.400" id="93fd2ca7-2d3a-4c77-ae2b-d130cc9030f6">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC94_Validate the api response by passing invalid from date in query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18894,6 +20188,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value="10-20-2023"/>
               <con:entry key="limit" value="10"/>
               <con:entry key="to date" value=""/>
@@ -18904,6 +20199,16 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value=""/>
+              <con:entry key="from_date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18915,9 +20220,15 @@ driver.quit()</script>
           </con:restRequest>
         </con:config>
       </con:testStep>
+<<<<<<< HEAD
       <con:testStep type="restrequest" name="TC95_Validate the api response by passing invalid to date in query parameter.400" id="372ded1b-12e5-466a-b585-f6b8e6849c8d">
         <con:settings/>
         <con:config service="EngagementSK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+      <con:testStep type="restrequest" name="TC95_Validate the api response by passing invalid to date in query parameter.400" id="a6226eb5-84d4-45a9-b3e2-3ec60c03db7c">
+        <con:settings/>
+        <con:config service="Engagement_DK" resourcePath="/v1/social/content-groups" methodName="Content-groups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+>>>>>>> deepak
           <con:restRequest name="TC95_Validate the api response by passing invalid to date in query parameter.400" id="8d5f1b80-3c73-4fb6-8be2-6abc2b4ea35e" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="authorization" value="${#Project#CLIENT AUTHORIZATION ID}" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
@@ -18939,6 +20250,7 @@ driver.quit()</script>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
               <con:entry key="offset" value=""/>
+<<<<<<< HEAD
               <con:entry key="from date" value=""/>
               <con:entry key="limit" value="10"/>
               <con:entry key="to date" value="10-10-1256"/>
@@ -18949,6 +20261,16 @@ driver.quit()</script>
               <con:entry>to date</con:entry>
               <con:entry>offset</con:entry>
               <con:entry>from date</con:entry>
+=======
+              <con:entry key="to_date" value="45-10-222"/>
+              <con:entry key="from_date" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>account_id</con:entry>
+              <con:entry>from_date</con:entry>
+              <con:entry>to_date</con:entry>
+              <con:entry>offset</con:entry>
+>>>>>>> deepak
             </con:parameterOrder>
             <con:environmentSpec>
               <con:entry environmentId="f156fc98-4773-4a81-a9a0-925401cc5cf7">
@@ -18963,6 +20285,7 @@ driver.quit()</script>
       <con:properties/>
       <con:reportParameters/>
     </con:testCase>
+<<<<<<< HEAD
     <con:testCase id="8d41eaf5-73f3-445d-bbf5-db9a49eb0c5d" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Refresh contents api Positive Test Cases" searchProperties="true" timeout="0">
       <con:settings/>
       <con:testStep type="restrequest" name="TC98_Validate the api by passing valid client id and client secret. 202" id="475fdc0e-37bb-4d76-a4b8-6dda7a631624">
@@ -19465,5 +20788,7 @@ driver.quit()</script>
       <con:properties/>
       <con:reportParameters/>
     </con:testCase>
+=======
+>>>>>>> deepak
   </con:testSuite>
 </con:soapui-project>
