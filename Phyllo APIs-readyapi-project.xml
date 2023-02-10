@@ -77,7 +77,6 @@
       <con:accessTokenURI/>
       <con:accessToken>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTc1NTQ0ZDQtYTEwZi00NzY3LTlkNTQtYTE4NGQ1OThlMTIxIiwidGVuYW50X2lkIjoiNzg3NmY4YWQtYWEyZS00YjI3LWIwMDgtODA2YTFmNjgyMWFiIiwidGVuYW50X2FwcF9pZCI6ImUwNzRhMGRkLTQyZmMtNDM3OS1hY2Q2LWMyMjY5NjE2N2Q0ZCIsInByb2R1Y3RzIjpbIklERU5USVRZX0FVRElFTkNFIiwiRU5HQUdFTUVOVF9BVURJRU5DRSIsIklOQ09NRSIsIkVOR0FHRU1FTlQiLCJJREVOVElUWSIsIkFDVElWSVRZIl0sImlzcyI6Imh0dHBzOi8vYXBpLmRldi5nZXRwaHlsbG8uY29tIiwiYXVkIjoiaHR0cHM6Ly9hcGkuZGV2LmdldHBoeWxsby5jb20vdjEvaW50ZXJuYWwiLCJpYXQiOjE2NzU3NDkyMjMuODI4OTAzLCJleHAiOjE2NzYzNTQwMjMuODI4ODg3fQ.D_IbwpA8nQgji6FJLOv7pogOfAWynwCjrfIjeqFsoDQ</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
       <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
       <con:manualAccessTokenExpirationTime/>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -108,7 +107,6 @@
       <con:type>OAuth 2.0</con:type>
       <con:accessToken>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTc1NTQ0ZDQtYTEwZi00NzY3LTlkNTQtYTE4NGQ1OThlMTIxIiwidGVuYW50X2lkIjoiNzg3NmY4YWQtYWEyZS00YjI3LWIwMDgtODA2YTFmNjgyMWFiIiwidGVuYW50X2FwcF9pZCI6ImUwNzRhMGRkLTQyZmMtNDM3OS1hY2Q2LWMyMjY5NjE2N2Q0ZCIsInByb2R1Y3RzIjpbIklERU5USVRZX0FVRElFTkNFIiwiRU5HQUdFTUVOVF9BVURJRU5DRSIsIklOQ09NRSIsIkVOR0FHRU1FTlQiLCJJREVOVElUWSIsIkFDVElWSVRZIl0sImlzcyI6Imh0dHBzOi8vYXBpLmRldi5nZXRwaHlsbG8uY29tIiwiYXVkIjoiaHR0cHM6Ly9hcGkuZGV2LmdldHBoeWxsby5jb20vdjEvaW50ZXJuYWwiLCJpYXQiOjE2NzU3NDkyMjMuODI4OTAzLCJleHAiOjE2NzYzNTQwMjMuODI4ODg3fQ.D_IbwpA8nQgji6FJLOv7pogOfAWynwCjrfIjeqFsgj</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
       <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
@@ -379,7 +377,6 @@
       <con:accessTokenURI/>
       <con:accessToken>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTc1NTQ0ZDQtYTEwZi00NzY3LTlkNTQtYTE4NGQ1OThlMTIxIiwidGVuYW50X2lkIjoiNzg3NmY4YWQtYWEyZS00YjI3LWIwMDgtODA2YTFmNjgyMWFiIiwidGVuYW50X2FwcF9pZCI6ImUwNzRhMGRkLTQyZmMtNDM3OS1hY2Q2LWMyMjY5NjE2N2Q0ZCIsInByb2R1Y3RzIjpbIklERU5USVRZX0FVRElFTkNFIiwiRU5HQUdFTUVOVF9BVURJRU5DRSIsIklOQ09NRSIsIkVOR0FHRU1FTlQiLCJJREVOVElUWSIsIkFDVElWSVRZIl0sImlzcyI6Imh0dHBzOi8vYXBpLmRldi5nZXRwaHlsbG8uY29tIiwiYXVkIjoiaHR0cHM6Ly9hcGkuZGV2LmdldHBoeWxsby5jb20vdjEvaW50ZXJuYWwiLCJpYXQiOjE2NzU3NDkyMjMuODI4OTAzLCJleHAiOjE2NzYzNTQwMjMuODI4ODg3fQ.D_IbwpA8nQgji6FJLOv7pogOfAWynwCjrfIjeqFsoDQ</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
       <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
       <con:manualAccessTokenExpirationTime/>
       <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
@@ -410,7 +407,6 @@
       <con:type>OAuth 2.0</con:type>
       <con:accessToken>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTc1NTQ0ZDQtYTEwZi00NzY3LTlkNTQtYTE4NGQ1OThlMTIxIiwidGVuYW50X2lkIjoiNzg3NmY4YWQtYWEyZS00YjI3LWIwMDgtODA2YTFmNjgyMWFiIiwidGVuYW50X2FwcF9pZCI6ImUwNzRhMGRkLTQyZmMtNDM3OS1hY2Q2LWMyMjY5NjE2N2Q0ZCIsInByb2R1Y3RzIjpbIklERU5USVRZX0FVRElFTkNFIiwiRU5HQUdFTUVOVF9BVURJRU5DRSIsIklOQ09NRSIsIkVOR0FHRU1FTlQiLCJJREVOVElUWSIsIkFDVElWSVRZIl0sImlzcyI6Imh0dHBzOi8vYXBpLmRldi5nZXRwaHlsbG8uY29tIiwiYXVkIjoiaHR0cHM6Ly9hcGkuZGV2LmdldHBoeWxsby5jb20vdjEvaW50ZXJuYWwiLCJpYXQiOjE2NzU3NDkyMjMuODI4OTAzLCJleHAiOjE2NzYzNTQwMjMuODI4ODg3fQ.D_IbwpA8nQgji6FJLOv7pogOfAWynwCjrfIjeqFsgj</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
       <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
